@@ -41,7 +41,7 @@ public class WashCar {
     public void finishWashing(Client client) {
         client.increaseWashCount();
 
-        if (client.washCount >= 100) {
+        if (client.washCount == 100) {
             client.clientType = ClientType.VIP;
         }
     }
